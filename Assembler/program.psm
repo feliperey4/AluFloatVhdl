@@ -1,0 +1,176 @@
+;================================================================
+; Alu Float
+;================================================================
+
+CONSTANT A_0        , 00    ; A_0
+CONSTANT A_1        , 01    ; A_1
+CONSTANT A_2        , 02    ; A_2
+CONSTANT A_3        , 03    ; A_3   Float 32 bit
+CONSTANT A_4        , 04    ; A_4
+CONSTANT A_5        , 05    ; A_5
+CONSTANT A_6        , 06    ; A_6
+CONSTANT A_7        , 07    ; A_7   Float 64 bit
+CONSTANT A_8        , 08    ; A_8   
+CONSTANT A_9        , 09    ; A_9
+CONSTANT A_10        , 0A    ; A_10
+CONSTANT A_11        , 0B    ; A_11
+CONSTANT A_12        , 0C    ; A_12
+CONSTANT A_13        , 0D    ; A_13
+CONSTANT A_14        , 0E    ; A_14
+CONSTANT A_15        , 0F    ; A_15   Float 128 bit
+
+CONSTANT B_0        , 10    ; B_0
+CONSTANT B_1        , 11    ; B_1
+CONSTANT B_2        , 12    ; B_2
+CONSTANT B_3        , 13    ; B_3   Float 32 bit
+CONSTANT B_4        , 14    ; B_4
+CONSTANT B_5        , 15    ; B_5
+CONSTANT B_6        , 16    ; B_6
+CONSTANT B_7        , 17    ; B_7   Float 64 bit
+CONSTANT B_8        , 18    ; B_8   
+CONSTANT B_9        , 19    ; B_9
+CONSTANT B_10        , 1A    ; B_10
+CONSTANT B_11        , 1B    ; B_11
+CONSTANT B_12        , 1C    ; B_12
+CONSTANT B_13        , 1D    ; B_13
+CONSTANT B_14        , 1E    ; B_14
+CONSTANT B_15        , 1F    ; B_15   Float 128 bit
+
+CONSTANT C_0        , 20    ; C_0
+CONSTANT C_1        , 21    ; C_1
+CONSTANT C_2        , 22    ; C_2
+CONSTANT C_3        , 23    ; C_3   Float 32 bit
+CONSTANT C_4        , 24    ; C_4
+CONSTANT C_5        , 25    ; C_5
+CONSTANT C_6        , 26    ; C_6
+CONSTANT C_7        , 27    ; C_7   Float 64 bit
+CONSTANT C_8        , 28    ; C_8   
+CONSTANT C_9        , 29    ; C_9
+CONSTANT C_10        , 2A    ; C_10
+CONSTANT C_11        , 2B    ; C_11
+CONSTANT C_12        , 2C    ; C_12
+CONSTANT C_13        , 2D    ; C_13
+
+CONSTANT C_14        , 2E    ; C_14
+CONSTANT C_15        , 2F    ; C_15   Float 128 bit
+
+CONSTANT OP      , 30    ; Byte de operacion
+
+; OPERACIONES
+CONSTANT SUMA  ,00; 
+CONSTANT RESTA ,01; 
+CONSTANT MULT  ,02; 
+
+
+;================================================================
+; Actual assembly program goes here...
+;================================================================
+				
+				ENABLE INTERRUPT
+	
+				; Suma
+				; 0,25 + 100 = 100,25 ......  X"3E 80 00 00" + X"42 C8 00 00" = X"42 c8 80 00"
+				; Escribe Operando A
+				LOAD s1,00
+				OUTPUT s1,A_0
+				LOAD s1,00
+				OUTPUT s1,A_1
+				LOAD s1,80
+				OUTPUT s1,A_2
+				LOAD s1,3E
+				OUTPUT s1,A_3
+				
+				; Escribe Operando B
+				LOAD s1,00
+				OUTPUT s1,B_0
+				LOAD s1,00
+				OUTPUT s1,B_1
+				LOAD s1,C8
+				OUTPUT s1,B_2
+				LOAD s1,42
+				OUTPUT s1,B_3
+				
+				; Escribe operacion
+				LOAD s1,SUMA
+				OUTPUT s1,OP
+				
+				
+				
+				; Multiplicacion
+				; FF7DF39A * 3F50AB0A = FF4EFF98
+				; Escribe Operando A
+				LOAD s1,9A
+				OUTPUT s1,A_0
+				LOAD s1,F3
+				OUTPUT s1,A_1
+				LOAD s1,7D
+				OUTPUT s1,A_2
+				LOAD s1,FF
+				OUTPUT s1,A_3
+				
+				; Escribe Operando B
+				LOAD s1,0A
+				OUTPUT s1,B_0
+				LOAD s1,AB
+				OUTPUT s1,B_1
+				LOAD s1,50
+				OUTPUT s1,B_2
+				LOAD s1,3F
+				OUTPUT s1,B_3
+				
+				; Escribe operacion
+				LOAD s1,MULT
+				OUTPUT s1,OP
+				
+				; Resta
+				;3D8B4F71 - BEADD650 = 3ED0AA2C
+				; Escribe Operando A
+				LOAD s1,71
+				OUTPUT s1,A_0
+				LOAD s1,4F
+				OUTPUT s1,A_1
+				LOAD s1,8B
+				OUTPUT s1,A_2
+				LOAD s1,3D
+				OUTPUT s1,A_3
+				
+				; Escribe Operando B
+				LOAD s1,50
+				OUTPUT s1,B_0
+				LOAD s1,D6
+				OUTPUT s1,B_1
+				LOAD s1,AD
+				OUTPUT s1,B_2
+				LOAD s1,BE
+				OUTPUT s1,B_3
+				
+				; Escribe operacion
+				LOAD s1,RESTA
+				OUTPUT s1,OP
+INFINITO:
+				JUMP INFINITO
+				
+				
+				
+
+				
+;================================================================
+;  Interrupciones AluFLoat
+;================================================================
+				ADDRESS 2B0
+int_AluFloat:
+				INPUT s0,C_0
+				INPUT s0,C_1
+				INPUT s0,C_2
+				INPUT s0,C_3
+				RETURNI ENABLE
+				
+;================================================================
+; Control de interrupciones
+;================================================================
+			;------- Manager interrupts
+				ADDRESS 3FF
+				JUMP int_AluFloat
+;================================================================
+;
+;================================================================
