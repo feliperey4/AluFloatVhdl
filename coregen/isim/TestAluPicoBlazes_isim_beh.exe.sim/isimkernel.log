@@ -1,0 +1,28 @@
+Command line:
+   TestAluPicoBlazes_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51694
+
+Mon Nov 16 17:49:08 2015
+
+
+ Elaboration Time: 0.34375 sec
+
+ Current Memory Usage: 369.873 Meg
+
+ Total Signals          : 1726
+ Total Nets             : 2272
+ Total Signal Drivers   : 472
+ Total Blocks           : 424
+ Total Primitive Blocks : 314
+ Total Processes        : 439
+ Total Traceable Variables  : 593
+ Total Scalar Nets and Variables : 28792
+
+ Total Simulation Time: 1.45313 sec
+
+ Current Memory Usage: 684.462 Meg
+
+Mon Nov 16 17:50:35 2015
+

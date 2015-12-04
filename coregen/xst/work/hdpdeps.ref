@@ -1,0 +1,133 @@
+V3 102
+FL C:/FPGA/AluFloat/AluFloat.vhd 2015/10/17.17:18:22 P.49d
+FL C:/FPGA/AluFloat/FloatMultiplicacion.vhd 2015/10/17.16:04:30 P.49d
+FL C:/FPGA/AluFloat/FloatSumaResta.vhd 2015/10/12.00:30:25 P.49d
+FL C:/FPGA/AluFloat/MuxAlu.vhd 2015/10/12.00:30:25 P.49d
+EN work/MuxAlu 1445118223 FL C:/FPGA/AluFloat/MuxAlu.vhd PB ieee/std_logic_1164 1354696159 \
+      LB Float PB Float/Parametros 1446871178
+AR work/MuxAlu/Behavioral 1445118224 \
+      FL C:/FPGA/AluFloat/MuxAlu.vhd EN work/MuxAlu 1445118223
+FL C:/FPGA/AluFloat/OpSumaResta.vhd 2015/10/17.16:14:47 P.49d
+FL C:/FPGA/AluFloat/VerificacionSumRes.vhd 2015/10/17.17:15:31 P.49d
+FL C:/FPGA/Practica05/coregen/bbfifo_16x8.vhd 2003/12/03.14:53:56 P.49d
+EN work/bbfifo_16x8 1443573096 FL C:/FPGA/Practica05/coregen/bbfifo_16x8.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/std_logic_arith 1354696160 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162 LB UNISIM PH unisim/VCOMPONENTS 1354696165
+AR work/bbfifo_16x8/low_level_definition 1443573097 \
+      FL C:/FPGA/Practica05/coregen/bbfifo_16x8.vhd EN work/bbfifo_16x8 1443573096 \
+      CP string CP label CP SRL16E CP FDRE CP LUT4 CP MUXCY CP XORCY CP FDR CP LUT3
+FL C:/FPGA/Practica05/coregen/ipcore_dir/program.vhd 2015/09/29.21:19:44 P.49d
+AR work/program/program_a -1 FL C:/FPGA/Practica05/coregen/ipcore_dir/program.vhd \
+      EN work/program 1446871187
+FL C:/FPGA/Practica05/coregen/kcpsm3.vhd 2004/06/14.15:07:40 P.49d
+FL C:/FPGA/Practica05/coregen/kcuart_rx.vhd 2003/12/03.14:53:38 P.49d
+EN work/kcuart_rx 1443573094 FL C:/FPGA/Practica05/coregen/kcuart_rx.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/std_logic_arith 1354696160 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162 LB UNISIM PH unisim/VCOMPONENTS 1354696165
+AR work/kcuart_rx/low_level_definition 1443573095 \
+      FL C:/FPGA/Practica05/coregen/kcuart_rx.vhd EN work/kcuart_rx 1443573094 \
+      CP FD CP string CP label CP SRL16E CP FDE CP LUT4 CP LUT3 CP LUT2
+FL C:/FPGA/Practica05/coregen/kcuart_tx.vhd 2003/12/03.14:53:48 P.49d
+EN work/kcuart_tx 1443573098 FL C:/FPGA/Practica05/coregen/kcuart_tx.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/std_logic_arith 1354696160 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162 LB UNISIM PH unisim/VCOMPONENTS 1354696165
+AR work/kcuart_tx/low_level_definition 1443573099 \
+      FL C:/FPGA/Practica05/coregen/kcuart_tx.vhd EN work/kcuart_tx 1443573098 \
+      CP LUT4 CP MUXF5 CP MUXF6 CP FDRS CP string CP label CP FDRE CP LUT2 CP MULT_AND \
+      CP MUXCY CP XORCY CP LUT3 CP FDE CP SRL16E CP FD
+FL C:/FPGA/Practica05/coregen/loopback.vhd 2015/10/17.18:43:23 P.49d
+EN work/loopback 1443573110 FL C:/FPGA/Practica05/coregen/loopback.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/std_logic_arith 1354696160 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162
+AR work/loopback/Behavioral 1443573111 \
+      FL C:/FPGA/Practica05/coregen/loopback.vhd EN work/loopback 1443573110 \
+      CP program CP kcpsm3 CP my_dcm CP uart_tx CP uart_rx
+FL C:/FPGA/Practica05/coregen/my_dcm.vhd 2015/09/29.21:31:21 P.49d
+EN work/my_dcm 1443573104 FL C:/FPGA/Practica05/coregen/my_dcm.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164 LB UNISIM \
+      PH unisim/VCOMPONENTS 1354696165
+AR work/my_dcm/BEHAVIORAL 1443573105 \
+      FL C:/FPGA/Practica05/coregen/my_dcm.vhd EN work/my_dcm 1443573104 CP BUFG \
+      CP IBUFG CP DCM_SP
+FL C:/FPGA/Practica05/coregen/uart_rx.vhd 2003/12/03.14:53:26 P.49d
+EN work/uart_rx 1443573108 FL C:/FPGA/Practica05/coregen/uart_rx.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/std_logic_arith 1354696160 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162 LB UNISIM PH unisim/VCOMPONENTS 1354696165
+AR work/uart_rx/macro_level_definition 1443573109 \
+      FL C:/FPGA/Practica05/coregen/uart_rx.vhd EN work/uart_rx 1443573108 \
+      CP kcuart_rx CP bbfifo_16x8
+FL C:/FPGA/Practica05/coregen/uart_tx.vhd 2003/12/03.14:53:16 P.49d
+EN work/uart_tx 1443573106 FL C:/FPGA/Practica05/coregen/uart_tx.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/std_logic_arith 1354696160 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162 LB UNISIM PH unisim/VCOMPONENTS 1354696165
+AR work/uart_tx/macro_level_definition 1443573107 \
+      FL C:/FPGA/Practica05/coregen/uart_tx.vhd EN work/uart_tx 1443573106 \
+      CP kcuart_tx CP bbfifo_16x8
+FL C:/FPGA/ProyectoFloat/AluFloat/AluFloat.vhd 2015/11/07.01:21:11 P.49d
+EN work/AluFloat 1446871191 FL C:/FPGA/ProyectoFloat/AluFloat/AluFloat.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164 LB Float \
+      PB Float/Parametros 1446871178
+AR work/AluFloat/BEHAVIORAL 1446871192 \
+      FL C:/FPGA/ProyectoFloat/AluFloat/AluFloat.vhd EN work/AluFloat 1446871191 \
+      CP FloatMultiplicacion CP FloatSumaResta
+FL C:/FPGA/ProyectoFloat/AluFloat/FloatMultiplicacion.vhd 2015/11/07.01:23:24 P.49d
+EN work/FloatMultiplicacion 1446871183 \
+      FL C:/FPGA/ProyectoFloat/AluFloat/FloatMultiplicacion.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/STD_LOGIC_UNSIGNED 1354696162 \
+      PB ieee/NUMERIC_STD 1354696164 LB Float PB Float/Parametros 1446871178
+AR work/FloatMultiplicacion/Behavioral 1446871184 \
+      FL C:/FPGA/ProyectoFloat/AluFloat/FloatMultiplicacion.vhd \
+      EN work/FloatMultiplicacion 1446871183
+FL C:/FPGA/ProyectoFloat/AluFloat/FloatSumaResta.vhd 2015/10/12.00:30:25 P.49d
+EN work/FloatSumaResta 1446871185 \
+      FL C:/FPGA/ProyectoFloat/AluFloat/FloatSumaResta.vhd PB ieee/std_logic_1164 1354696159 \
+      PB ieee/NUMERIC_STD 1354696164 LB UNISIM PH unisim/VCOMPONENTS 1354696165 \
+      LB Float PB Float/Parametros 1446871178
+AR work/FloatSumaResta/BEHAVIORAL 1446871186 \
+      FL C:/FPGA/ProyectoFloat/AluFloat/FloatSumaResta.vhd EN work/FloatSumaResta 1446871185 \
+      CP VerificacionSumRes CP OperacionSumRest
+FL C:/FPGA/ProyectoFloat/AluFloat/OpSumaResta.vhd 2015/11/07.01:39:26 P.49d
+EN work/OperacionSumRest 1446871181 \
+      FL C:/FPGA/ProyectoFloat/AluFloat/OpSumaResta.vhd PB ieee/std_logic_1164 1354696159 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162 PB ieee/NUMERIC_STD 1354696164 \
+      LB Float PB Float/Parametros 1446871178
+AR work/OperacionSumRest/Behavioral 1446871182 \
+      FL C:/FPGA/ProyectoFloat/AluFloat/OpSumaResta.vhd EN work/OperacionSumRest 1446871181
+FL C:/FPGA/ProyectoFloat/AluFloat/VerificacionSumRes.vhd 2015/10/17.17:15:31 P.49d
+EN work/VerificacionSumRes 1446871179 \
+      FL C:/FPGA/ProyectoFloat/AluFloat/VerificacionSumRes.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/STD_LOGIC_UNSIGNED 1354696162 \
+      PB ieee/NUMERIC_STD 1354696164 LB Float PB Float/Parametros 1446871178
+AR work/VerificacionSumRes/Behavioral 1446871180 \
+      FL C:/FPGA/ProyectoFloat/AluFloat/VerificacionSumRes.vhd \
+      EN work/VerificacionSumRes 1446871179
+FL C:/FPGA/ProyectoFloat/Assembler/PROGRAM.VHD 2015/11/07.00:34:47 P.49d
+EN work/program 1446871187 FL C:/FPGA/ProyectoFloat/Assembler/PROGRAM.VHD \
+      PB ieee/std_logic_1164 1354696159 PB ieee/std_logic_arith 1354696160 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162 LB UNISIM PH unisim/VCOMPONENTS 1354696165
+AR work/program/low_level_definition 1446871188 \
+      FL C:/FPGA/ProyectoFloat/Assembler/PROGRAM.VHD EN work/program 1446871187 \
+      CP RAMB16_S18
+FL C:/FPGA/ProyectoFloat/coregen/kcpsm3.vhd 2004/06/14.15:07:40 P.49d
+EN work/kcpsm3 1446871189 FL C:/FPGA/ProyectoFloat/coregen/kcpsm3.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/std_logic_arith 1354696160 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162 LB UNISIM PH unisim/VCOMPONENTS 1354696165
+AR work/kcpsm3/low_level_definition 1446871190 \
+      FL C:/FPGA/ProyectoFloat/coregen/kcpsm3.vhd EN work/kcpsm3 1446871189 \
+      CP LUT1 CP FDR CP FDS CP LUT4 CP FD CP FDE CP LUT3 CP FDRE CP LUT2 CP MUXCY CP XORCY \
+      CP INV CP string CP label CP FDRSE CP RAM16X1D CP RAM64X1S CP MUXF5 CP RAM32X1S
+FL C:/FPGA/ProyectoFloat/coregen/loopback.vhd 2015/11/07.01:19:54 P.49d
+EN work/picoBlazeAluFloat 1446871193 \
+      FL C:/FPGA/ProyectoFloat/coregen/loopback.vhd PB ieee/std_logic_1164 1354696159 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162 PB ieee/NUMERIC_STD 1354696164 \
+      LB Float PB Float/Parametros 1446871178
+AR work/picoBlazeAluFloat/Behavioral 1446871194 \
+      FL C:/FPGA/ProyectoFloat/coregen/loopback.vhd EN work/picoBlazeAluFloat 1446871193 \
+      CP program CP kcpsm3 CP AluFloat
+FL C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.vhd 2015/11/07.00:58:21 P.49d
+EN work/TestAluPicoBlazes 1446871195 \
+      FL C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/TestAluPicoBlazes/Behavioral 1446871196 \
+      FL C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.vhd \
+      EN work/TestAluPicoBlazes 1446871195 CP picoBlazeAluFloat

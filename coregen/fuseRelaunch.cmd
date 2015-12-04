@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes_isim_beh.exe" -prj "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes_beh.prj" "work.TestAluPicoBlazes" 

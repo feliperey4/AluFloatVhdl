@@ -1,0 +1,61 @@
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes_isim_beh.exe -prj C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes_beh.prj work.TestAluPicoBlazes 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/FPGA/ProyectoFloat/coregen/../AluFloat/ParametrosFloat.vhd" into library Float
+Parsing VHDL file "C:/FPGA/ProyectoFloat/coregen/../AluFloat/VerificacionSumRes.vhd" into library work
+Parsing VHDL file "C:/FPGA/ProyectoFloat/coregen/../AluFloat/OpSumaResta.vhd" into library work
+Parsing VHDL file "C:/FPGA/ProyectoFloat/coregen/../AluFloat/FloatSumaResta.vhd" into library work
+Parsing VHDL file "C:/FPGA/ProyectoFloat/coregen/../AluFloat/FloatMultiplicacion.vhd" into library work
+Parsing VHDL file "C:/FPGA/ProyectoFloat/coregen/kcpsm3.vhd" into library work
+Parsing VHDL file "C:/FPGA/ProyectoFloat/coregen/../Assembler/PROGRAM.VHD" into library work
+Parsing VHDL file "C:/FPGA/ProyectoFloat/coregen/../AluFloat/AluFloat.vhd" into library work
+Parsing VHDL file "C:/FPGA/ProyectoFloat/coregen/loopback.vhd" into library work
+Parsing VHDL file "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling package parametros
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture ramb16_s18_v of entity RAMB16_S18 [\RAMB16_S18("0000000000000000000...]
+Compiling architecture low_level_definition of entity program [program_default]
+Compiling architecture lut1_v of entity LUT1 [\LUT1("0001")(0,3)\]
+Compiling architecture fdr_v of entity FDR [\FDR('0')\]
+Compiling architecture fds_v of entity FDS [\FDS('1')\]
+Compiling architecture lut4_v of entity LUT4 [\LUT4("0000000010000000")(0,15)\]
+Compiling architecture fd_v of entity FD [\FD('0')\]
+Compiling architecture fde_v of entity FDE [\FDE('0')\]
+Compiling architecture lut3_v of entity LUT3 [\LUT3("00000100")(0,7)\]
+Compiling architecture fdre_v of entity FDRE [\FDRE('0')\]
+Compiling architecture lut2_v of entity LUT2 [\LUT2("1101")(0,3)\]
+Compiling architecture muxcy_v of entity MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity XORCY [xorcy_default]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture fdrse_v of entity FDRSE [\FDRSE('0')\]
+Compiling architecture ram16x1d_v of entity RAM16X1D [\RAM16X1D("0000000000000000")\]
+Compiling architecture ram64x1s_v of entity RAM64X1S [\RAM64X1S("000000000000000000000...]
+Compiling architecture muxf5_v of entity MUXF5 [muxf5_default]
+Compiling architecture ram32x1s_v of entity RAM32X1S [\RAM32X1S("000000000000000000000...]
+Compiling architecture low_level_definition of entity kcpsm3 [kcpsm3_default]
+Compiling architecture behavioral of entity FloatMultiplicacion [floatmultiplicacion_default]
+Compiling architecture behavioral of entity VerificacionSumRes [verificacionsumres_default]
+Compiling architecture behavioral of entity OperacionSumRest [operacionsumrest_default]
+Compiling architecture behavioral of entity FloatSumaResta [floatsumaresta_default]
+Compiling architecture behavioral of entity AluFloat [alufloat_default]
+Compiling architecture behavioral of entity picoBlazeAluFloat [picoblazealufloat_default]
+Compiling architecture behavioral of entity testalupicoblazes
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 128 VHDL Units
+Built simulation executable C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes_isim_beh.exe
+Fuse Memory Usage: 68760 KB
+Fuse CPU Usage: 4858 ms

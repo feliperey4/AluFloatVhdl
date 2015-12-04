@@ -1,0 +1,28 @@
+Command line:
+   picoBlazeAluFloat_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51977
+
+Fri Nov 06 23:20:34 2015
+
+
+ Elaboration Time: 0.5 sec
+
+ Current Memory Usage: 365.83 Meg
+
+ Total Signals          : 1712
+ Total Nets             : 2109
+ Total Signal Drivers   : 464
+ Total Blocks           : 423
+ Total Primitive Blocks : 314
+ Total Processes        : 432
+ Total Traceable Variables  : 593
+ Total Scalar Nets and Variables : 28629
+
+ Total Simulation Time: 0.609375 sec
+
+ Current Memory Usage: 365.83 Meg
+
+Fri Nov 06 23:20:37 2015
+

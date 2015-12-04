@@ -1,0 +1,28 @@
+Command line:
+   TestIntensivo_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52600
+
+Sat Nov 07 01:47:36 2015
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 357.085 Meg
+
+ Total Signals          : 93
+ Total Nets             : 665
+ Total Signal Drivers   : 46
+ Total Blocks           : 14
+ Total Primitive Blocks : 11
+ Total Processes        : 22
+ Total Traceable Variables  : 17
+ Total Scalar Nets and Variables : 1168
+
+ Total Simulation Time: 26.0469 sec
+
+ Current Memory Usage: 671.674 Meg
+
+Sat Nov 07 01:48:22 2015
+

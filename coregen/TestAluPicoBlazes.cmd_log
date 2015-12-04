@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.xst" -ofn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.syr" 
+xst -intstyle ise -ifn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.xst" -ofn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.syr" 
+xst -intstyle ise -ifn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.xst" -ofn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.syr" 
+xst -intstyle ise -ifn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.xst" -ofn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.syr" 
+xst -intstyle ise -ifn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.xst" -ofn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.syr" 
+xst -intstyle ise -ifn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.xst" -ofn "C:/FPGA/ProyectoFloat/coregen/TestAluPicoBlazes.syr" 
